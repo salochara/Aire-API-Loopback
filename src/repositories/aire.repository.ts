@@ -1,6 +1,6 @@
 import {DefaultCrudRepository} from '@loopback/repository';
 import {Aire, AireRelations} from '../models';
-import {MongoConnectionDataSource} from '../datasources';
+import { CalidadAireDataSource } from '../datasources';
 import {inject} from '@loopback/core';
 
 export class AireRepository extends DefaultCrudRepository<
@@ -9,7 +9,7 @@ export class AireRepository extends DefaultCrudRepository<
   AireRelations
 > {
   constructor(
-    @inject('datasources.mongo_connection') dataSource: MongoConnectionDataSource,
+    @inject('datasources.mongo_connection') dataSource:  CalidadAireDataSource ,
   ) {
     super(Aire, dataSource);
   }
