@@ -1,0 +1,12 @@
+{
+  "name": "mongo_connection",
+  "connector": "mongodb",
+  "url": "mongodb+srv://salochara:8988@cluster0-av09l.mongodb.net/calidad_aire?retryWrites=true&w=majority",
+  "host": "cluster0-av09l.mongodb.net",
+  "port": 27017,
+  "user": "salochara",
+  "password": "8988",
+  "database": "calidad_aire",
+  "useNewUrlParser": true
+}
+
